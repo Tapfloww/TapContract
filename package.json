@@ -1,0 +1,22 @@
+{
+  "name": "tapflow-contract",
+  "version": "1.0.0",
+  "description": "TapFlow - Stellar Soroban smart contract for fee sponsorship",
+  "main": "lib/index.ts",
+  "scripts": {
+    "build": "soroban contract build",
+    "test": "jest",
+    "deploy": "soroban contract deploy --wasm dist/contract.wasm"
+  },
+  "keywords": ["stellar", "soroban", "sponsorship"],
+  "author": "TapFlow",
+  "license": "ISC",
+  "dependencies": {
+    "soroban-sdk": "^21.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0"
+  }
+}
